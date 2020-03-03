@@ -1,0 +1,98 @@
+<!-- Create HTML for temperature -->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+  
+    <title>Maximum Temperature</title>
+    <!-- Bring in our bootstrap stylesheet -->
+    <!-- Reference 11.3 #7 -->
+    <title>Bootstrap Components</title>
+ 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+     
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+     
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Latitude Analysis</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots
+                                <span class="caret"></span>
+                        </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="temperature.html">Temperature</a>
+                                </li>
+                                <li>
+                                    <a href="humidity.html">Humidity</a>
+                                </li>
+                                <li>
+                                    <a href="cloudiness.html">Cloudiness</a>
+                                </li>
+                                <li>
+                                    <a href="windspeed.html">Wind Speed</a>
+                                </li>
+                            </ul>
+                    </li>
+                    <li>
+                        <a href="comparison.html">Comparison</a>
+                    </li>
+                    <li>
+                        <a href="data.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+         
+        </div>
+        
+    </nav>
+        <div class="container">
+            <div class="row row-grid">
+                         
+                <div class="col-md-8">
+                    <div class="box">
+                        <section id="intro">
+                            <h1>Temperature</h1>
+                                <hr>
+                                 <figure>
+
+                                    <img id="visualization-main" src="Resources/assets/images/temperature.png" alt="Latitude vs. Maximum Temperature">
+
+                                 </figure>
+                                 
+                                 <section id="summary">
+                                 <p>   
+                                     This graph represents city latitude versus maximum daily temperature and shows a strong correlation.
+                                     The closer the city is to the equator, the warmer it is.
+                                 </p>
+                                 </section>
+             
+                            </section>
+                        </div>
+                    </div>                 
+                </div>
+            </div> 
+        </body>  
+</html>
+

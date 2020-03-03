@@ -1,0 +1,125 @@
+<!-- Create HTML Index -->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="UTF-8">
+  
+<title>Bootstrap Components</title>
+ <!-- Reference 11.3 exercise #7 -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+ 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
+<link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Reference 11.3 exercise#1 – class, container, nav class = navbar -->
+<!-- See also: https://getbootstrap.com/docs/3.3/css/ -->
+<!-- Use .container-fluid for a full width container, spanning the entire width of your viewport.  -->
+<!-- Use .container for a responsive fixed width container. -->
+
+<!-- See also: https://getbootstrap.com/docs/4.0/components/navbar/ -->
+<!-- Navbar is Bootstrap’s responsive navigation header -->
+<!-- .navbar-brand for your company, product, or project name.  -->
+<!-- .navbar-nav for a full-height and lightweight navigation (including support for dropdowns). -->
+<!-- .collapse.navbar-collapse for grouping and hiding navbar contents by a parent breakpoint. -->
+<!-- Containers - Although it’s not required, you can wrap a navbar in a .container to center it on a page or add one within to only center the contents of a fixed or static top navbar..--> -->
+
+<!-- See also: https://www.sitepoint.com/understanding-bootstrap-modals/ -->
+<!-- Two custom data attributes are: data-toggle and data-target.  -->
+<!-- The toggle tells Bootstrap what to do and the target tells Bootstrap which element is going to open.  -->
+
+<<body>
+    <div class = "navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" style="background-color: #0bada6;" href="index.html">Latitude</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-1"aria-controls="navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="temperature.html#">Temperature</a>
+                        <a class="dropdown-item" href="humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparison.html#">Comparisons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html#">Data</a>
+                    </li>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+        
+    </nav>
+
+    <div class="container">
+        <div class="col-lg-7 col-md-16">
+            <div class="box">
+                <h3 class = "title">Summary: Latitude vs. X</h3>    
+                <hr></hr>
+                <img src="Resources/assets/images/temperature.png" alt="temperature" class="image float-left rounded">
+                <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. 
+                    To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a 
+                    dataset on over 500 cities.</p>
+
+                <p>After assembling the dataset, we used Matplotlib to plot various aspects of weather vs. latitude. 
+                    Factors we looked at included: temperature, cloudiness, wind speed, and humidity. 
+                    This site provides the source data and visualizations created as part of the analysis, 
+                    as well as explanations and descriptions of any trends and correlations witnessed.</p>
+            </div>
+        </div>
+
+        <div class="col-lg-5 col-md-12">
+            <div class = "box">
+                <h3 class = "title">Visualizations</h3>
+            <hr></hr>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-5">
+                        <a href = "temperature.html">
+                            <img src="Resources/assets/images/temperature.png" alt="temperature" class="panel">
+                        </a>
+                    </div>
+                    <div class="col-5">
+                        <a href="humidity.html">
+                            <img src="Resources/assets/images/humidity.png" alt="humidity" class="panel">
+                        </a>
+                    </div>
+                </div>
+
+            <div class="row">
+                <div class="col-5">
+                    <a href="cloudiness.html">
+                        <img src="Resources/assets/images/cloudiness.png" alt="cloudiness" class="panel">
+                    </a>
+                </div>
+                <div class="col-5">
+                    <a href="windspeed.html">
+                        <img src="Resources/assets/images/windspeed.png" alt="windspeed" class="panel">
+                         
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
